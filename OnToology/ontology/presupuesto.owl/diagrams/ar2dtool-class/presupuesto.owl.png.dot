@@ -1,7 +1,7 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1501"
-node [shape = rectangle, color="orange"]; "espresup:PresupuestoGasto" "espresup:EjecucionGasto" "espresup:InversionFinancieramenteSostenible" "time:ProperInterval" "espresup:LiquidacionGasto" "time:Interval" "-193141ce:1750dd15a6d:-7ffc" "skos:ConceptScheme" "espresup:Liquidacion" "time:TemporalEntity" "espresup:LiquidacionIngreso" "-193141ce:1750dd15a6d:-7fe9" "-193141ce:1750dd15a6d:-7ff9" "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito" "espresup:Presupuesto" "skos:Concept" "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Municipio" "espresup:PresupuestoIngreso" "espresup:EjecucionIngreso" "time:Instant" ; /*classes style*/
+node [shape = rectangle, color="orange"]; "espresup:PresupuestoGasto" "-1a9fc807:1750dd29cbd:-7fe9" "espresup:EjecucionGasto" "espresup:InversionFinancieramenteSostenible" "time:ProperInterval" "espresup:LiquidacionGasto" "time:Interval" "skos:ConceptScheme" "espresup:Liquidacion" "time:TemporalEntity" "espresup:LiquidacionIngreso" "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito" "espresup:Presupuesto" "skos:Concept" "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Municipio" "espresup:PresupuestoIngreso" "-1a9fc807:1750dd29cbd:-7ff9" "espresup:EjecucionIngreso" "time:Instant" "-1a9fc807:1750dd29cbd:-7ffc" ; /*classes style*/
 	"terms:alternative" -> "dc:title" [ label = "rdfs:subPropertyOf" ];
 	"terms:tableOfContents" -> "dc:description" [ label = "rdfs:subPropertyOf" ];
 	"time:Instant" -> "time:ProperInterval" [ label = "owl:disjointWith" ];
@@ -18,15 +18,18 @@ node [shape = rectangle, color="orange"]; "espresup:PresupuestoGasto" "espresup:
 	"skos:Concept" -> "skos:ConceptScheme" [ label = "owl:disjointWith" ];
 	"terms:identifier" -> "dc:identifier" [ label = "rdfs:subPropertyOf" ];
 	"NULL" -> "espresup:liquidacion" [ label = "owl:onProperty" ];
+	"NULL" -> "-1a9fc807:1750dd29cbd:-7ff7" [ label = "rdf:rest" ];
 	"NULL" -> "espresup:clasificacionEconomicaGasto" [ label = "owl:onProperty" ];
 	"NULL" -> "espresup:presupuestoGasto" [ label = "owl:onProperty" ];
-	"NULL" -> "-193141ce:1750dd15a6d:-7ffb" [ label = "owl:unionOf" ];
 	"NULL" -> "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Municipio" [ label = "owl:onClass" ];
 	"NULL" -> "espresup:EjecucionGasto" [ label = "owl:onClass" ];
+	"NULL" -> "-1a9fc807:1750dd29cbd:-7ff8" [ label = "owl:unionOf" ];
+	"NULL" -> "-1a9fc807:1750dd29cbd:-7fe7" [ label = "rdf:rest" ];
 	"NULL" -> "espresup:PresupuestoGasto" [ label = "owl:onClass" ];
 	"NULL" -> "time:Instant" [ label = "rdf:first" ];
 	"NULL" -> "espresup:clasificacionEconomicaIngreso" [ label = "owl:onProperty" ];
 	"NULL" -> "espresup:Liquidacion" [ label = "owl:onClass" ];
+	"NULL" -> "-1a9fc807:1750dd29cbd:-7ffa" [ label = "rdf:rest" ];
 	"NULL" -> "espresup:liquidacionGasto" [ label = "owl:onProperty" ];
 	"NULL" -> "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#municipio" [ label = "owl:onProperty" ];
 	"NULL" -> "espresup:periodoEjecucion" [ label = "owl:onProperty" ];
@@ -40,20 +43,17 @@ node [shape = rectangle, color="orange"]; "espresup:PresupuestoGasto" "espresup:
 	"NULL" -> "rdf:nil" [ label = "rdf:rest" ];
 	"NULL" -> "skos:Concept" [ label = "owl:onClass" ];
 	"NULL" -> "time:ProperInterval" [ label = "owl:onClass" ];
-	"NULL" -> "-193141ce:1750dd15a6d:-7ff7" [ label = "rdf:rest" ];
+	"NULL" -> "-1a9fc807:1750dd29cbd:-7fe8" [ label = "owl:unionOf" ];
 	"NULL" -> "espresup:EjecucionGasto" [ label = "rdf:first" ];
-	"NULL" -> "-193141ce:1750dd15a6d:-7ffa" [ label = "rdf:rest" ];
-	"NULL" -> "-193141ce:1750dd15a6d:-7ff8" [ label = "owl:unionOf" ];
-	"NULL" -> "-193141ce:1750dd15a6d:-7fe7" [ label = "rdf:rest" ];
+	"NULL" -> "-1a9fc807:1750dd29cbd:-7ffb" [ label = "owl:unionOf" ];
 	"NULL" -> "espresup:PresupuestoIngreso" [ label = "rdf:first" ];
 	"NULL" -> "espresup:clasificacionPrograma" [ label = "owl:onProperty" ];
-	"NULL" -> "espresup:EjecucionIngreso" [ label = "rdf:first" ];
 	"NULL" -> "espresup:presupuestoIngreso" [ label = "owl:onProperty" ];
+	"NULL" -> "espresup:EjecucionIngreso" [ label = "rdf:first" ];
 	"NULL" -> "espresup:EjecucionIngreso" [ label = "owl:onClass" ];
 	"NULL" -> "espresup:LiquidacionGasto" [ label = "owl:onClass" ];
-	"NULL" -> "-193141ce:1750dd15a6d:-7fe8" [ label = "owl:unionOf" ];
 	"http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto" -> "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto/1.0.0" [ label = "owl:versionIRI" ];
-	"time:TemporalEntity" -> "-193141ce:1750dd15a6d:-7fe9" [ label = "owl:equivalentClass" ];
+	"time:TemporalEntity" -> "-1a9fc807:1750dd29cbd:-7fe9" [ label = "owl:equivalentClass" ];
 	"espresup:clasificacionEconomicaGasto" -> "owl:topObjectProperty" [ label = "rdfs:subPropertyOf" ];
 	"time:hasEnd" -> "time:hasTime" [ label = "rdfs:subPropertyOf" ];
 	"espresup:remanenteCredito" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
@@ -76,7 +76,7 @@ node [shape = rectangle, color="orange"]; "espresup:PresupuestoGasto" "espresup:
 	"espresup:LiquidacionGasto" -> "xsd:float" [ label = "espresup:remanenteCredito" ];
 	"espresup:Presupuesto" -> "xsd:dateTime" [ label = "espresup:fechaAprobacionPleno" ];
 	"espresup:EjecucionGasto" -> "xsd:float" [ label = "espresup:obligacionesPendientes31Dic" ];
-	"-193141ce:1750dd15a6d:-7ff9" -> "time:ProperInterval" [ label = "espresup:periodoEjecucion" ];
+	"-1a9fc807:1750dd29cbd:-7ff9" -> "time:ProperInterval" [ label = "espresup:periodoEjecucion" ];
 	"espresup:PresupuestoGasto" -> "skos:Concept" [ label = "espresup:clasificacionPrograma" ];
 	"espresup:PresupuestoIngreso" -> "espresup:EjecucionIngreso" [ label = "espresup:ejecucionIngreso" ];
 	"espresup:EjecucionIngreso" -> "xsd:float" [ label = "espresup:previsionModificaciones" ];
@@ -89,7 +89,7 @@ node [shape = rectangle, color="orange"]; "espresup:PresupuestoGasto" "espresup:
 	"espresup:EjecucionIngreso" -> "xsd:float" [ label = "espresup:recaudacionNeta" ];
 	"time:Instant" -> "xsd:gYearMonth" [ label = "time:inXSDgYearMonth" ];
 	"espresup:Presupuesto" -> "espresup:Liquidacion" [ label = "espresup:liquidacion" ];
-	"-193141ce:1750dd15a6d:-7ffc" -> "owl:Thing" [ label = "espresup:clasificacionOrganica" ];
+	"-1a9fc807:1750dd29cbd:-7ffc" -> "owl:Thing" [ label = "espresup:clasificacionOrganica" ];
 	"espresup:InversionFinancieramenteSostenible" -> "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito" [ label = "espresup:ambito" ];
 	"espresup:EjecucionIngreso" -> "xsd:float" [ label = "espresup:derechosReconocidos" ];
 	"espresup:PresupuestoGasto" -> "skos:Concept" [ label = "espresup:clasificacionEconomicaGasto" ];
